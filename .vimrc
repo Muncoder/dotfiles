@@ -19,27 +19,32 @@ syntax on
 "space when block as tab with >
 set sw=2
 
+"copy to sysetm clipboard ubuntu system
+set clipboard=unnamedplus
+
 "NERDTree file browser size
 let g:NERDTreeWinSize=20
 "Start NERDTree when vim starts
 autocmd VimEnter * NERDTree
 
 "emmet initialize for html/css
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
-let g:user_emmet_expandabbr_key='<Tab>'
+"let g:user_emmet_install_global = 0
+"autocmd FileType html,css EmmetInstall
+"let g:user_emmet_expandabbr_key='<Tab>'
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-let g:user_emmet_leader_key='<C-Z>'
+"let g:user_emmet_leader_key='<C-Z>'
 
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
-	Plug 'valloric/youcompleteme'
 	Plug 'elixir-lang/vim-elixir'
 	Plug 'nanotech/jellybeans.vim'
 	Plug 'sirver/ultisnips'
 	Plug 'kien/ctrlp.vim'
-	Plug 'mattn/emmet-vim'
+	Plug 'valloric/youcompleteme'
+	Plug 'jistr/vim-nerdtree-tabs'
 call plug#end()
+
+"neocompleteme
