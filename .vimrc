@@ -26,6 +26,7 @@ set clipboard=unnamedplus
 let g:NERDTreeWinSize=20
 "Start NERDTree when vim starts
 autocmd VimEnter * NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
 
 "emmet initialize for html/css
 "let g:user_emmet_install_global = 0
@@ -37,14 +38,18 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 "let g:user_emmet_leader_key='<C-Z>'
 
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
+	Plug 'jistr/vim-nerdtree-tabs'
+
 	Plug 'elixir-lang/vim-elixir'
 	Plug 'nanotech/jellybeans.vim'
 	Plug 'sirver/ultisnips'
 	Plug 'kien/ctrlp.vim'
-	Plug 'valloric/youcompleteme'
-	Plug 'jistr/vim-nerdtree-tabs'
+	Plug 'shougo/neocomplete.vim'
 call plug#end()
 
 "neocompleteme
