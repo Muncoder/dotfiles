@@ -1,3 +1,6 @@
+" 256-color terminal
+set t_Co=256
+
 "2 tabspac
 set tabstop=2
 
@@ -41,15 +44,16 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 
+
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
 	Plug 'jistr/vim-nerdtree-tabs'
 
 	Plug 'elixir-lang/vim-elixir'
-	Plug 'nanotech/jellybeans.vim'
 	Plug 'sirver/ultisnips'
 	Plug 'kien/ctrlp.vim'
 	Plug 'shougo/neocomplete.vim'
+	Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 "neocompleteme
