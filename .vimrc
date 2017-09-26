@@ -25,6 +25,8 @@ set sw=2
 "copy to sysetm clipboard ubuntu system
 set clipboard=unnamedplus
 
+"NERDTreeToggle shortcut ctrl+n
+nnoremap <C-n> :NERDTreeToggle<CR>
 "NERDTree file browser size
 let g:NERDTreeWinSize=20
 "Start NERDTree when vim starts
