@@ -1,6 +1,8 @@
 " 256-color terminal
 set t_Co=256
 
+set background=dark
+
 "2 tabspac
 set tabstop=2
 
