@@ -12,10 +12,15 @@ set number
 "mouse active
 set mouse=a
 
+"highlight line
+set cursorline
+"highlight current column
+set cursorcolumn
+
 "show file name
 set laststatus=2
 "show file name with directory
-set statusline+=%F
+"set statusline+=%F
 syntax on
 
 "css autocomplete
@@ -50,6 +55,14 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 
+"--------------------------------------------------------
+"tab
+nnoremap <C-t> :tabe<CR>
+nnoremap <C-x> :tabclose<CR>
+nnoremap <C-PageUp> :tabprevious<CR>
+nnoremap <C-PageDown> :tabnext<CR>
+
+runtime macros/matchit.vim
 
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
@@ -61,6 +74,7 @@ call plug#begin()
 	Plug 'shougo/neocomplete.vim'
 	Plug 'flazz/vim-colorschemes'
 	Plug 'bling/vim-airline'
+	Plug 'vim-scripts/matchit.zip'
 call plug#end()
 
 "neocompleteme
