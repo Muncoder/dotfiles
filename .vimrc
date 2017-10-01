@@ -1,6 +1,12 @@
 " 256-color terminal
 set t_Co=256
 
+" Set encoding to UTF-8 to show glyphs
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ 12
+" required if using https://github.com/bling/vim-airline
+" let g:airline_powerline_fonts=1
+
 set background=dark
 
 "2 tabspac
@@ -59,8 +65,11 @@ let g:neocomplete#enable_at_startup = 1
 "tab
 nnoremap <C-t> :tabe<CR>
 nnoremap <C-x> :tabclose<CR>
-nnoremap <C-PageUp> :tabprevious<CR>
-nnoremap <C-PageDown> :tabnext<CR>
+nnoremap <C-Up> :tabprevious<CR>
+nnoremap <C-Down> :tabnext<CR>
+
+"map esc to jj to leave insert mode
+imap jj <Esc>
 
 runtime macros/matchit.vim
 
@@ -75,6 +84,8 @@ call plug#begin()
 	Plug 'flazz/vim-colorschemes'
 	Plug 'bling/vim-airline'
 	Plug 'vim-scripts/matchit.zip'
+	Plug 'ryanoasis/nerd-fonts'
+	Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 "neocompleteme
