@@ -69,6 +69,12 @@ nnoremap <C-x> :tabclose<CR>
 nnoremap <C-Right> gt
 nnoremap <C-Left> gT
 
+"--------------------------------------------------------
+"split
+"horizontal and vertical split following hjkl convention
+nnoremap <C-j> :split<CR>
+nnoremap <C-l> :vsplit<CR>
+
 "map esc to jj to leave insert mode
 imap jj <esc>
 
