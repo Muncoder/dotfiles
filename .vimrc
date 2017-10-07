@@ -38,6 +38,7 @@ set sw=2
 "copy to sysetm clipboard ubuntu system
 set clipboard=unnamedplus
 
+"nerdtree
 "NERDTreeToggle shortcut ctrl+n
 nnoremap <C-n> :NERDTreeToggle<CR>
 "NERDTree file browser size
@@ -65,8 +66,8 @@ let g:neocomplete#enable_at_startup = 1
 "tab
 nnoremap <C-t> :tabe<CR>
 nnoremap <C-x> :tabclose<CR>
-nnoremap <C-Right> gT
-nnoremap <C-Left> gt
+nnoremap <C-Right> gt
+nnoremap <C-Left> gT
 
 "map esc to jj to leave insert mode
 imap jj <esc>
@@ -86,6 +87,7 @@ call plug#begin()
 	Plug 'vim-scripts/matchit.zip'
 	Plug 'ryanoasis/nerd-fonts'
 	Plug 'ryanoasis/vim-devicons'
+  Plug 'gcmt/taboo.vim' 
 call plug#end()
 
 "neocompleteme
