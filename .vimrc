@@ -65,11 +65,11 @@ let g:neocomplete#enable_at_startup = 1
 "tab
 nnoremap <C-t> :tabe<CR>
 nnoremap <C-x> :tabclose<CR>
-nnoremap <C-Up> :tabprevious<CR>
-nnoremap <C-Down> :tabnext<CR>
+nnoremap <C-Right> gT
+nnoremap <C-Left> gt
 
 "map esc to jj to leave insert mode
-imap jj <Esc>
+imap jj <esc>
 
 runtime macros/matchit.vim
 
