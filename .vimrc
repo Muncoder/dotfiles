@@ -102,6 +102,7 @@ call plug#begin()
 	Plug 'ryanoasis/vim-devicons'
   Plug 'gcmt/taboo.vim' 
 	Plug 'vim-scripts/ZoomWin'
+	Plug 'tpope/vim-surround'
 call plug#end()
 
 "neocompleteme
