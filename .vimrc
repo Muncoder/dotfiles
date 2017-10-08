@@ -38,6 +38,13 @@ set sw=2
 "copy to sysetm clipboard ubuntu system
 set clipboard=unnamedplus
 
+
+"--------------------------------------------------------
+" ctrlp plugin to search only at working directory
+let g:ctrlp_working_path_mode = 'r'
+"--------------------------------------------------------
+
+
 "nerdtree
 "NERDTreeToggle shortcut ctrl+n
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -94,6 +101,7 @@ call plug#begin()
 	Plug 'ryanoasis/nerd-fonts'
 	Plug 'ryanoasis/vim-devicons'
   Plug 'gcmt/taboo.vim' 
+	Plug 'vim-scripts/ZoomWin'
 call plug#end()
 
 "neocompleteme
