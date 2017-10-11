@@ -52,7 +52,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=20
 "Start NERDTree when vim starts
 autocmd VimEnter * NERDTree
-let g:nerdtree_tabs_open_on_console_startup=1
+"let g:nerdtree_tabs_open_on_console_startup=1
 "open folder in one click
 let g:NERDTreeMouseMode=3
 
@@ -61,9 +61,14 @@ let g:NERDTreeMouseMode=3
 "autocmd FileType html,css EmmetInstall
 "let g:user_emmet_expandabbr_key='<Tab>'
 
+
+"ultisnip-----------------------------------------------
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+"--------------------------------------------------------
+
+
 "let g:user_emmet_leader_key='<C-Z>'
 
 " Use neocomplete.
