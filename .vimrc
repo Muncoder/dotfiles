@@ -1,3 +1,6 @@
+set autoread
+au CursorHold, CursorHoldI * checktime
+
 " 256-color terminal
 set t_Co=256
 
@@ -108,6 +111,7 @@ call plug#begin()
   Plug 'gcmt/taboo.vim' 
 	Plug 'vim-scripts/ZoomWin'
 	Plug 'tpope/vim-surround'
+	Plug 'djoshea/vim-autoread'
 call plug#end()
 
 "neocompleteme
