@@ -1,5 +1,12 @@
+"always show updated file content
 set autoread
 au CursorHold, CursorHoldI * checktime
+
+"stop creating recovery files
+set nobackup
+set noswapfile
+set noundofile
+
 
 " 256-color terminal
 set t_Co=256
@@ -92,6 +99,12 @@ nnoremap <C-l> :vsplit<CR>
 
 "map esc to jj to leave insert mode
 imap jj <esc>
+
+"navigate in insert mode
+inoremap <A-h> <Left>
+inoremap <A-j> <Down>
+inoremap <A-k> <Up>
+inoremap <A-l> <Right>
 
 runtime macros/matchit.vim
 
