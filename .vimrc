@@ -101,7 +101,7 @@ nnoremap <C-l> :vsplit<CR>
 imap jj <esc>
 
 "navigate in insert mode
-inoremap <A-h> <Left>
+inoremap <C-h> <Left>
 inoremap <A-j> <Down>
 inoremap <A-k> <Up>
 inoremap <A-l> <Right>
@@ -125,6 +125,7 @@ call plug#begin()
 	Plug 'vim-scripts/ZoomWin'
 	Plug 'tpope/vim-surround'
 	Plug 'djoshea/vim-autoread'
+	Plug 'tpope/vim-commentary'
 call plug#end()
 
 "neocompleteme
