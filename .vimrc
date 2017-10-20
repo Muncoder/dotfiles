@@ -65,6 +65,8 @@ autocmd VimEnter * NERDTree
 "let g:nerdtree_tabs_open_on_console_startup=1
 "open folder in one click
 let g:NERDTreeMouseMode=3
+let NERDTreeMapOpenInTab='<ENTER>'
+
 
 "emmet initialize for html/css
 "let g:user_emmet_install_global = 0
