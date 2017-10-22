@@ -128,9 +128,16 @@ call plug#begin()
 	Plug 'tpope/vim-surround'
 	Plug 'djoshea/vim-autoread'
 	Plug 'tpope/vim-commentary'
+	Plug 'rking/ag.vim'
+	Plug 'mileszs/ack.vim'
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "neocompleteme
 
 "set default colorscheme
 colorscheme railscasts
+
+"let g:ackprg = "ag --vimgrep"
+
