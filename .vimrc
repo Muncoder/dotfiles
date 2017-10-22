@@ -116,18 +116,20 @@ call plug#begin()
 
 	Plug 'elixir-lang/vim-elixir'
 	Plug 'sirver/ultisnips'
-	Plug 'kien/ctrlp.vim'
 	Plug 'shougo/neocomplete.vim'
 	Plug 'flazz/vim-colorschemes'
 	Plug 'bling/vim-airline'
 	Plug 'vim-scripts/matchit.zip'
 	Plug 'ryanoasis/nerd-fonts'
 	Plug 'ryanoasis/vim-devicons'
-  Plug 'gcmt/taboo.vim' 
+	Plug 'gcmt/taboo.vim' 
 	Plug 'vim-scripts/ZoomWin'
 	Plug 'tpope/vim-surround'
 	Plug 'djoshea/vim-autoread'
 	Plug 'tpope/vim-commentary'
+	
+	"search
+	Plug 'kien/ctrlp.vim'
 	Plug 'rking/ag.vim'
 	Plug 'mileszs/ack.vim'
 	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
