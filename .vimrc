@@ -139,7 +139,8 @@ call plug#end()
 "neocompleteme
 
 "set default colorscheme
-colorscheme railscasts
+colorscheme CandyPaper
+" colorscheme railscasts
 
 "let g:ackprg = "ag --vimgrep"
 
