@@ -45,7 +45,7 @@ syntax on
 "space when block as tab with >
 set sw=2
 
-"copy to sysetm clipboard ubuntu system
+"copy to system clipboard ubuntu system
 set clipboard=unnamedplus
 
 
@@ -134,6 +134,11 @@ call plug#begin()
 	Plug 'mileszs/ack.vim'
 	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 	Plug 'junegunn/fzf.vim'
+
+	"docker
+	Plug 'ekalinin/dockerfile.vim'
+
+	Plug 'vim-scripts/auto-pairs-gentle'
 call plug#end()
 
 "neocompleteme
@@ -141,6 +146,7 @@ call plug#end()
 "set default colorscheme
 colorscheme CandyPaper
 " colorscheme railscasts
+" colorscheme 256-jungle
 
 "let g:ackprg = "ag --vimgrep"
 
