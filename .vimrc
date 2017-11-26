@@ -1,3 +1,16 @@
+
+let c='a'
+while c <= 'z'
+  exec "set <A-".c.">=\e".c
+  exec "imap \e".c." <A-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+set timeout ttimeoutlen=50
+"set <M-h>=^[h
+
+
+
 "always show updated file content
 set autoread
 au CursorHold, CursorHoldI * checktime
@@ -29,7 +42,7 @@ set number
 set mouse=a
 
 "highlight line
-set cursorline
+"set cursorline
 "highlight current column
 set cursorcolumn
 
@@ -98,17 +111,19 @@ nnoremap <C-Left> gT
 "horizontal and vertical split following hjkl convention
 nnoremap <C-j> :split<CR>
 nnoremap <C-l> :vsplit<CR>
+nnoremap <C-m> :Files<CR>
 
 "map esc to jj to leave insert mode
 imap jj <esc>
 
 "navigate in insert mode
-inoremap <C-h> <Left>
+inoremap <A-h> <Left>
 inoremap <A-j> <Down>
 inoremap <A-k> <Up>
 inoremap <A-l> <Right>
 
 runtime macros/matchit.vim
+
 
 call plug#begin()
 	Plug 'scrooloose/nerdtree'
@@ -146,7 +161,7 @@ call plug#end()
 "set default colorscheme
 colorscheme CandyPaper
 " colorscheme railscasts
-" colorscheme 256-jungle
+" colorscheme bonokai
 
 "let g:ackprg = "ag --vimgrep"
 
